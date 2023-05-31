@@ -13149,3 +13149,24 @@ function galleryPageSlider() {
 }
 
 galleryPageSlider()
+
+
+if (!!document.querySelectorAll('.genplan__map').length) {
+  document.querySelectorAll('.genplan__map-bg path').forEach(house=>{
+    house.addEventListener('click', function(){
+      document.querySelectorAll('.genplan__place').forEach(popup=>{
+        popup.classList.remove('js-visible')
+      })
+      document.querySelector('.genplan__place[data-target-id="'+ house.id +'"]').classList.add('js-visible')
+      document.querySelector('.genplan__map').classList.add('js-selected')
+    })
+  })
+  document.querySelector('.genplan__map-bg svg').addEventListener('click', function(e){
+    if(e.target.tagName != 'path') {
+      document.querySelectorAll('.genplan__place').forEach(popup=>{
+        popup.classList.remove('js-visible')
+      })
+      document.querySelector('.genplan__map').classList.remove('js-selected')
+    }
+  })
+}
