@@ -6934,3 +6934,39 @@ input[type=number] {
 #callback-popup .popup__close {
     background: transparent;
 }
+#get-consultation-2 .popup__content {
+    max-width: 736px;
+}
+.popup__mortgage-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.popup__mortgage-item {
+    width: calc(100% / 3 - 32px);
+    margin: 0 16px 32px;
+}
+.popup__mortgage-item-title {
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--slate-gray-50);
+}
+.popup__mortgage-item-value {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--slate-gray-90);
+}
+
+@media (max-width: 520px) {
+    .popup__mortgage-item {
+        width: calc(100% / 2 - 32px);
+    }
+}
+@media (max-width: 400px) {
+    .popup__mortgage-item {
+        width: calc(100% - 32px);
+    }
+}
