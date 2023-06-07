@@ -6928,10 +6928,10 @@ input[type=number] {
 }
 
 
-#callback-popup .popup__content-bottom {
+[id^="callback-popup"] .popup__content-bottom {
     padding: 0;
 }
-#callback-popup .popup__close {
+[id^="callback-popup"] .popup__close {
     background: transparent;
 }
 #get-consultation-2 .popup__content {
