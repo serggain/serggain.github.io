@@ -28,7 +28,10 @@
 				<nav class="menu">
 					<ul class="menu__items">
 						<li class="menu__item dropdown">
-							<button class="menu__dropdown">О районе</button>
+							<div class="menu__dropdown">
+								<a href="#" class="menu__dropdown-link">О районе</a>
+								<button class="menu__dropdown-opener"></button>
+							</div>
 							<div class="menu__dropdown-content">
 								<a class="menu__dropdown-link" href="#">Почему «Вишнёвая горка»?</a>
 								<a class="menu__dropdown-link" href="#">Экскурсии в «Вишневую горку»</a>
@@ -38,7 +41,21 @@
 								<a class="menu__dropdown-link" href="#">О застройщике</a>
 							</div>
 						</li>
-						<li class="menu__item"><a href="./catalog.html" class="menu__link">Квартиры</a></li>
+						<li class="menu__item dropdown">
+							<div class="menu__dropdown">
+								<a href="./catalog.html" class="menu__dropdown-link">Квартиры</a>
+								<button class="menu__dropdown-opener"></button>
+							<div>
+							<div class="menu__dropdown-content">
+								<a class="menu__dropdown-link" href="#">Однокомнатные</a>
+								<a class="menu__dropdown-link" href="#">Двухкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Трехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Четырехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Отделка</a>
+								<a class="menu__dropdown-link" href="#">Планировки</a>
+
+							</div>
+						</li>
 						<li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
 						<li class="menu__item dropdown">
@@ -239,13 +256,13 @@
 													<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" data-required="tel" placeholder="+7 9___-___-__-__" class="input">
 												</div>
 												<div class="sign-up-form-input sign-up-form-input_w100">
-													<label for="name">Ваш номер телефона</label>
+													<label for="name">Ваше сообщение</label>
 													<textarea autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="input"></textarea>
 												</div>
 						
 												<div class="checkbox">
-													<input id="sign-up" data-error="Ошибка" class="checkbox__input" data-required type="checkbox" value="1" name="form[]">
-													<label for="sign-up" class="checkbox__label"><span class="checkbox__text">Согласен с <a href="#">политикой
+													<input id="sign-up-444" data-error="Ошибка" class="checkbox__input" data-required type="checkbox" value="1" name="form[]">
+													<label for="sign-up-444" class="checkbox__label"><span class="checkbox__text">Согласен с <a href="#">политикой
 																конфиденциальности</a></span></label>
 												</div>
 												<button type="submit" class="crimson-btn button">Оставить заявку</button>
@@ -413,7 +430,7 @@
 		<div class="cookie__container">
 			<p class="subtitle cookie__subtitle">Мы используем файлы <a href="#">cookie</a> для того, чтобы предоставить Вам
 				больше возможностей при использовании сайта.</p>
-			<a href="#" class="crimson-btn cookie__btn">Хорошо</a>
+			<a href="javascript:void(0);" class="crimson-btn cookie__btn">Хорошо</a>
 		</div>
 	</section>
 	<script src="js/app.js?_v=20230515151049"></script>

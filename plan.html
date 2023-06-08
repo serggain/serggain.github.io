@@ -28,7 +28,10 @@
 				<nav class="menu">
 					<ul class="menu__items">
 						<li class="menu__item dropdown">
-							<button class="menu__dropdown">О районе</button>
+							<div class="menu__dropdown">
+								<a href="#" class="menu__dropdown-link">О районе</a>
+								<button class="menu__dropdown-opener"></button>
+							</div>
 							<div class="menu__dropdown-content">
 								<a class="menu__dropdown-link" href="#">Почему «Вишнёвая горка»?</a>
 								<a class="menu__dropdown-link" href="#">Экскурсии в «Вишневую горку»</a>
@@ -38,7 +41,21 @@
 								<a class="menu__dropdown-link" href="#">О застройщике</a>
 							</div>
 						</li>
-						<li class="menu__item"><a href="./catalog.html" class="menu__link">Квартиры</a></li>
+						<li class="menu__item dropdown">
+							<div class="menu__dropdown">
+								<a href="./catalog.html" class="menu__dropdown-link">Квартиры</a>
+								<button class="menu__dropdown-opener"></button>
+							<div>
+							<div class="menu__dropdown-content">
+								<a class="menu__dropdown-link" href="#">Однокомнатные</a>
+								<a class="menu__dropdown-link" href="#">Двухкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Трехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Четырехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Отделка</a>
+								<a class="menu__dropdown-link" href="#">Планировки</a>
+
+							</div>
+						</li>
 						<li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
 						<li class="menu__item dropdown">
@@ -145,7 +162,7 @@
 												<div href="#" class="flat__tag">
 													56 м²
 												</div>
-												<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+												<a href="#" data-popup="#video-popup" class="flat__card-video">
 													<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 													</svg>
@@ -168,7 +185,7 @@
 												</div>
 											</div>
 											<div class="flat__card-bottom">
-												<a href="./appartment.html" class="flat__card-link">Полное описание</a>
+												<a data-popup="#available-popup" href="./appartment.html" class="flat__card-link">Доступна в домах</a>
 											</div>
 										</div>
 									</li>
@@ -178,7 +195,7 @@
 												<div href="#" class="flat__tag">
 													56 м²
 												</div>
-												<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+												<a href="#" data-popup="#video-popup" class="flat__card-video">
 													<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 													</svg>
@@ -201,7 +218,7 @@
 												</div>
 											</div>
 											<div class="flat__card-bottom">
-												<a href="./appartment.html" class="flat__card-link">Полное описание</a>
+												<a data-popup="#available-popup" href="./appartment.html" class="flat__card-link">Доступна в домах</a>
 											</div>
 										</div>
 									</li>
@@ -211,7 +228,7 @@
 												<div href="#" class="flat__tag">
 													56 м²
 												</div>
-												<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+												<a href="#" data-popup="#video-popup" class="flat__card-video">
 													<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 													</svg>
@@ -234,7 +251,7 @@
 												</div>
 											</div>
 											<div class="flat__card-bottom">
-												<a href="./appartment.html" class="flat__card-link">Полное описание</a>
+												<a data-popup="#available-popup" href="./appartment.html" class="flat__card-link">Доступна в домах</a>
 											</div>
 										</div>
 									</li>
@@ -244,7 +261,7 @@
 												<div href="#" class="flat__tag">
 													56 м²
 												</div>
-												<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+												<a href="#" data-popup="#video-popup" class="flat__card-video">
 													<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 													</svg>
@@ -268,7 +285,7 @@
 												</div>
 											</div>
 											<div class="flat__card-bottom">
-												<a href="./appartment.html" class="flat__card-link">Полное описание</a>
+												<a data-popup="#available-popup" href="./appartment.html" class="flat__card-link">Доступна в домах</a>
 											</div>
 										</div>
 									</li>
@@ -278,7 +295,7 @@
 												<div href="#" class="flat__tag">
 													56 м²
 												</div>
-												<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+												<a href="#" data-popup="#video-popup" class="flat__card-video">
 													<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 													</svg>
@@ -301,7 +318,7 @@
 												</div>
 											</div>
 											<div class="flat__card-bottom">
-												<a href="./appartment.html" class="flat__card-link">Полное описание</a>
+												<a data-popup="#available-popup" href="./appartment.html" class="flat__card-link">Доступна в домах</a>
 											</div>
 										</div>
 									</li>
@@ -369,7 +386,7 @@
 										<li class="splide__slide">
 											<div class="flat__card">
 												<div class="flat__card-top">
-													<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+													<a href="#" data-popup="#video-popup" class="flat__card-video">
 														<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 														</svg>
@@ -413,7 +430,7 @@
 										<li class="splide__slide">
 											<div class="flat__card">
 												<div class="flat__card-top">
-													<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+													<a href="#" data-popup="#video-popup" class="flat__card-video">
 														<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 														</svg>
@@ -457,7 +474,7 @@
 										<li class="splide__slide">
 											<div class="flat__card">
 												<div class="flat__card-top">
-													<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+													<a href="#" data-popup="#video-popup" class="flat__card-video">
 														<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 														</svg>
@@ -501,7 +518,7 @@
 										<li class="splide__slide">
 											<div class="flat__card">
 												<div class="flat__card-top">
-													<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+													<a href="#" data-popup="#video-popup" class="flat__card-video">
 														<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 														</svg>
@@ -545,7 +562,7 @@
 										<li class="splide__slide">
 											<div class="flat__card">
 												<div class="flat__card-top">
-													<a href="#" data-popup="#gallery-popup" class="flat__card-video">
+													<a href="#" data-popup="#video-popup" class="flat__card-video">
 														<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M14.1134 7C16.1176 7 17.7423 8.567 17.7423 10.5V17.5C17.7423 19.433 16.1176 21 14.1134 21H6.62887C4.6247 21 3 19.433 3 17.5V10.5C3 8.567 4.6247 7 6.62887 7H14.1134ZM17.7423 16.0332V11.9668L22.7036 9.09348C23.5711 8.30147 25 8.89457 25 10.0466V17.9534C25 19.1055 23.5711 19.6986 22.7036 18.9066L17.7423 16.0332Z" stroke="#D3163C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 														</svg>
@@ -938,7 +955,7 @@
 		<div class="cookie__container">
 			<p class="subtitle cookie__subtitle">Мы используем файлы <a href="#">cookie</a> для того, чтобы предоставить Вам
 				больше возможностей при использовании сайта.</p>
-			<a href="#" class="crimson-btn cookie__btn">Хорошо</a>
+			<a href="javascript:void(0);" class="crimson-btn cookie__btn">Хорошо</a>
 		</div>
 	</section>
 	<script src="js/app.js?_v=20230515151049"></script>

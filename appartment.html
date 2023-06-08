@@ -28,7 +28,10 @@
 				<nav class="menu">
 					<ul class="menu__items">
 						<li class="menu__item dropdown">
-							<button class="menu__dropdown">О районе</button>
+							<div class="menu__dropdown">
+								<a href="#" class="menu__dropdown-link">О районе</a>
+								<button class="menu__dropdown-opener"></button>
+							</div>
 							<div class="menu__dropdown-content">
 								<a class="menu__dropdown-link" href="#">Почему «Вишнёвая горка»?</a>
 								<a class="menu__dropdown-link" href="#">Экскурсии в «Вишневую горку»</a>
@@ -38,7 +41,21 @@
 								<a class="menu__dropdown-link" href="#">О застройщике</a>
 							</div>
 						</li>
-						<li class="menu__item"><a href="./catalog.html" class="menu__link">Квартиры</a></li>
+						<li class="menu__item dropdown">
+							<div class="menu__dropdown">
+								<a href="./catalog.html" class="menu__dropdown-link">Квартиры</a>
+								<button class="menu__dropdown-opener"></button>
+							<div>
+							<div class="menu__dropdown-content">
+								<a class="menu__dropdown-link" href="#">Однокомнатные</a>
+								<a class="menu__dropdown-link" href="#">Двухкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Трехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Четырехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Отделка</a>
+								<a class="menu__dropdown-link" href="#">Планировки</a>
+
+							</div>
+						</li>
 						<li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
 						<li class="menu__item dropdown">
@@ -152,7 +169,7 @@
 								<p class="appartment__price-metr">58 430 ₽ за м <sup>2</sup></p>
 							</div>
 							<div class="appartment__buttons">
-								<a href="#" class="crimson-btn">Оставить заявку</a>
+								<a href="#" data-popup="#callback-popup" class="crimson-btn">Оставить заявку</a>
 								<button class="red-heart-btn">
 									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M13.4738 7.22352L14 7.7415L14.5262 7.22352C16.5219 5.25883 19.7624 5.25883 21.7581 7.22352C23.7473 9.18178 23.7473 12.3518 21.7581 14.3101L14.1754 21.7749C14.0781 21.8707 13.9219 21.8707 13.8246 21.7749L6.24189 14.3101C4.2527 12.3518 4.2527 9.18178 6.24189 7.22352C8.23761 5.25883 11.4781 5.25883 13.4738 7.22352Z" stroke="#D3163C" stroke-width="1.5" />
@@ -760,7 +777,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="callback-popup"  aria-hidden="true" class="popup ">
+	<div id="callback-popup" aria-hidden="true" class="popup ">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<div class="popup__content-bottom">
@@ -843,7 +860,7 @@
 		<div class="cookie__container">
 			<p class="subtitle cookie__subtitle">Мы используем файлы <a href="#">cookie</a> для того, чтобы предоставить Вам
 				больше возможностей при использовании сайта.</p>
-			<a href="#" class="crimson-btn cookie__btn">Хорошо</a>
+			<a href="javascript:void(0);" class="crimson-btn cookie__btn">Хорошо</a>
 		</div>
 	</section>
 	<script src="js/app.js?_v=20230515151049"></script>

@@ -207,7 +207,7 @@
 }
 
 .splide__arrow:hover:not(:disabled) {
-    opacity: .9
+    opacity: .6
 }
 
 .splide__arrow:disabled {
@@ -1624,8 +1624,11 @@ img.dev__office {
     transition: all .2s;
 }
 
-.menu__dropdown::after {
-    content: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2710%27 viewBox=%270 0 12 10%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M2 4L6 7L10 4%27 stroke=%27%2334454F%27 stroke-width=%271.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E%0A");
+.menu__dropdown-opener {
+    display: block;
+    width: 12px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2710%27 viewBox=%270 0 12 10%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M2 4L6 7L10 4%27 stroke=%27%2334454F%27 stroke-width=%271.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E%0A");
     margin-left: 8px;
     display: inline-block;
     transition: all .2s;
@@ -1688,7 +1691,7 @@ img.dev__office {
     color: var(--crimson-100)
 }
 
-.menu__item.dropdown.active .menu__dropdown::after {
+.menu__item.dropdown.active .menu__dropdown-opener {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg)
@@ -3038,16 +3041,14 @@ a.news__item:hover .news__item-title {
     position: sticky;
     bottom: -1px;
     padding: 38px 0;
-    z-index: 900
-}
-
-.cookie.hide {
+    z-index: 900;
     opacity: 0;
-    visibility: hidden;
-    height: 0;
-    display: none
+    pointer-events: none;
 }
-
+.cookie.js-visible {
+    opacity: 1;
+    pointer-events: all;
+}
 .cookie__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4533,6 +4534,9 @@ input[type=number] {
     font-size: 16px;
     line-height: 138%
 }
+.text_ol li {
+    margin-left: 18px;
+}
 
 .text__ul li::marker,
 .text_ol li::marker {
@@ -4635,7 +4639,7 @@ input[type=number] {
         color: var(--crimson-100)
     }
 
-    .menu__item.dropdown:hover .menu__dropdown::after {
+    .menu__item.dropdown:hover .menu__dropdown-opener {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         transform: rotate(180deg)
@@ -5962,8 +5966,15 @@ input[type=number] {
 .contacts-card__info-block-value a {
     font-weight: 500;
     line-height: 20px;
-    color: var(--green-apple-100);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: transparent;
 }
+.contacts-card__info-block-value a:hover {
+    color: var(--green-apple-100);
+    text-decoration-color: var(--green-apple-100);
+}
+
 .contacts-card__info-block_small .contacts-card__info-block-title {
     margin-bottom: 2px;
 }

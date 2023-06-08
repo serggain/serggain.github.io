@@ -28,7 +28,10 @@
 				<nav class="menu">
 					<ul class="menu__items">
 						<li class="menu__item dropdown">
-							<button class="menu__dropdown">О районе</button>
+							<div class="menu__dropdown">
+								<a href="#" class="menu__dropdown-link">О районе</a>
+								<button class="menu__dropdown-opener"></button>
+							</div>
 							<div class="menu__dropdown-content">
 								<a class="menu__dropdown-link" href="#">Почему «Вишнёвая горка»?</a>
 								<a class="menu__dropdown-link" href="#">Экскурсии в «Вишневую горку»</a>
@@ -38,7 +41,21 @@
 								<a class="menu__dropdown-link" href="#">О застройщике</a>
 							</div>
 						</li>
-						<li class="menu__item"><a href="./catalog.html" class="menu__link">Квартиры</a></li>
+						<li class="menu__item dropdown">
+							<div class="menu__dropdown">
+								<a href="./catalog.html" class="menu__dropdown-link">Квартиры</a>
+								<button class="menu__dropdown-opener"></button>
+							<div>
+							<div class="menu__dropdown-content">
+								<a class="menu__dropdown-link" href="#">Однокомнатные</a>
+								<a class="menu__dropdown-link" href="#">Двухкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Трехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Четырехкомнатные</a>
+								<a class="menu__dropdown-link" href="#">Отделка</a>
+								<a class="menu__dropdown-link" href="#">Планировки</a>
+
+							</div>
+						</li>
 						<li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
 						<li class="menu__item dropdown">
@@ -310,7 +327,7 @@
 		<div class="cookie__container">
 			<p class="subtitle cookie__subtitle">Мы используем файлы <a href="#">cookie</a> для того, чтобы предоставить Вам
 				больше возможностей при использовании сайта.</p>
-			<a href="#" class="crimson-btn cookie__btn">Хорошо</a>
+			<a href="javascript:void(0);" class="crimson-btn cookie__btn">Хорошо</a>
 		</div>
 	</section>
 	<script src="js/app.js?_v=20230515151049"></script>
