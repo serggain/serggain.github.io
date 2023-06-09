@@ -4286,7 +4286,16 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
-.block-mortgage-selection .mortgage-selection__range input[type=range]::-moz-range-thumb,
+.block-mortgage-selection .mortgage-selection__range input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: var(--crimson-100);
+    margin-top: -7px;
+    z-index: 20;
+}
 .block-mortgage-selection .mortgage-selection__range input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
@@ -4295,7 +4304,7 @@ input[type=number] {
     border-radius: 100%;
     background-color: var(--crimson-100);
     margin-top: -7px;
-    z-index: 20
+    z-index: 20;
 }
 
 .block-mortgage-selection .range-text {
@@ -4310,7 +4319,11 @@ input[type=number] {
     line-height: 20px;
     color: var(--slate-gray-50);
     right: 20px;
-    top: calc(50% - 10px)
+    top: calc(50% - 10px);
+}
+
+.block-mortgage-selection .range-text.range-text_years::after {
+    content: 'лет';
 }
 
 .block-mortgage-selection .range-text .input {
@@ -4323,7 +4336,7 @@ input[type=number] {
 .block-mortgage-selection .range-text input::-webkit-inner-spin-button,
 .block-mortgage-selection .range-text input::-webkit-outer-spin-button {
     -webkit-appearance: none;
-    margin: 0
+    margin: 0;
 }
 
 .block-mortgage-selection .crimson-btn {
