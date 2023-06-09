@@ -3038,7 +3038,8 @@ a.news__item:hover .news__item-title {
     background: -webkit-gradient(linear, left bottom, left top, from(#f8f9fb), to(#f8f9fb)), #d9d9d9;
     background: -o-linear-gradient(bottom, #f8f9fb, #f8f9fb), #d9d9d9;
     background: linear-gradient(0deg, #f8f9fb, #f8f9fb), #d9d9d9;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: -1px;
     padding: 38px 0;
     z-index: 900;
@@ -4017,6 +4018,10 @@ button#filter-close {
     margin-bottom: 24px;
     z-index: 2;
     position: relative
+}
+
+.popup .block__sign-up-title {
+    max-width: unset;
 }
 
 .block__sign-up-phone {
@@ -7235,4 +7240,18 @@ input[type=number] {
 [data-target-id="genplan-path-50"] {
     left: 58.1%;
     top: 32.5%;
+}
+
+#thanks .popup__content-bottom {
+    padding: 0;
+}
+#thanks .popup__content {
+    max-width: 550px;
+}
+
+#thanks .crimson-btn {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
 }
